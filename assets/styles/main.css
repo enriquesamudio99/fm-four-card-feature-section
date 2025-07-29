@@ -148,8 +148,23 @@ a {
   margin-top: 3.5rem;
 }
 
+@media (min-width: 48rem) {
+  .hero {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .hero {
+    margin-top: 6.375rem;
+  }
+}
+
 .hero__info {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__title {
@@ -158,9 +173,21 @@ a {
   color: var(--clr-gray-500);
 }
 
+@media (min-width: 48rem) {
+  .hero__title {
+    font: var(--txt-preset-1-lg);
+  }
+}
+
 .hero__title-span {
   font: var(--txt-preset-2-sm);
   display: block;
+}
+
+@media (min-width: 48rem) {
+  .hero__title-span {
+    font: var(--txt-preset-2-lg);
+  }
 }
 
 .hero__text {
@@ -168,14 +195,48 @@ a {
   color: var(--clr-gray-500);
 }
 
+@media (min-width: 48rem) {
+  .hero__text {
+    width: 33.75rem;
+  }
+}
+
 .features {
   margin-top: 3.75rem;
   margin-bottom: 2.875rem;
 }
 
+@media (min-width: 48rem) {
+  .features {
+    margin-top: 4.625rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .features {
+    margin-top: 4.625rem;
+    margin-bottom: 4.625rem;
+  }
+} 
+
 .features__grid {
   display: grid;
   gap: 2rem;
+}
+
+@media (min-width: 48rem) {
+  .features__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 80rem) {
+  .features__grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 
 .feature {
@@ -183,6 +244,50 @@ a {
   border-radius: .5rem;
   overflow: hidden;
   box-shadow: 0 .9375rem 1.875rem -0.6875rem rgba(131, 166, 210, .5);
+}
+
+@media (min-width: 48rem) {
+  .feature--supervisor {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .feature--team-builder {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .feature--karma {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+  }
+
+  .feature--calculator {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (min-width: 80rem) {
+  .feature--supervisor {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+  }
+
+  .feature--team-builder {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+  }
+
+  .feature--karma {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+  }
+
+  .feature--calculator {
+    grid-column: 5 / 7;
+    grid-row: 2 / 4;
+  }
 }
 
 .feature__container {
