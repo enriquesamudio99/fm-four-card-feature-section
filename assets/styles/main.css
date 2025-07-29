@@ -193,6 +193,7 @@ a {
 .hero__text {
   margin-top: 1rem;
   color: var(--clr-gray-500);
+  letter-spacing: .0063rem;
 }
 
 @media (min-width: 48rem) {
@@ -324,6 +325,7 @@ a {
   font: var(--txt-preset-5-lg);
   margin-top: .375rem;
   color: var(--clr-gray-400);
+  letter-spacing: .0056rem;
 }
 
 .feature__icon {
